@@ -4,3 +4,48 @@
     margin: 0;
     box-sizing: border-box;
 }
+/*
+1. vi tri
+2. kich thuoc
+3. mau sac
+4. kieu dang
+note: tu ngoai vao trong
+        tu tren xuong duoi
+        tong quan --> chi tiet
+
+*/
+#main{
+
+}
+#header{
+    height: 46.5px;
+    width: 532px;
+    background-color: #000;;
+}
+#nav{
+
+}
+#nav li{
+    display: inline-block;
+}
+#nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+#nav .subnav{
+    display: none;
+}
+#slider{
+
+}
+#content{
+
+}
+#footer{
+
+}
+
+
+
+
+
