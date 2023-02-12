@@ -1,1 +1,18 @@
-abcd go .
+1. phân tích
+2. xây dựng base
+3. xây dựng từng 
+
+
+Những thành phần:
+1. header(đầu trang)
+2. Navigation(điều hướng)
+3. breadcumb
+4. sidebar
+5. slider, 
+6. Content
+    - about
+    - tour
+    - contact
+    - image
+    - footer
+7. Footer(chân trang)
