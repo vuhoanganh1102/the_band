@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.3.0-web/css/all.css">
     <title>The_Band</title>
+    <style>
+        #slider .slide1{
+            position: relative;
+            background: url('/assets/img/slide/slider1.jpg') center / cover no-repeat;
+            padding-top:50%;
+        }
+        #slider .slide2{
+            position: relative;
+            background: url('/assets/img/slide/slider2.jpg') center / cover no-repeat;
+            padding-top: 50%;
+        }
+        #slider .slide3{
+            position: relative;
+            background: url('/assets/img/slide/slider3.jpg') center / cover no-repeat;
+            padding-top: 50%;
+        }
+    </style>
 </head>
 <body>
     <div id="main">
@@ -32,18 +49,16 @@
                 <li><i class="fa-solid fa-magnifying-glass"></i></li>
             </ul>
         </div>
-        <div id="content">
-            <div id="slider">
-                <div class="myslide slide1">
-                    <div class="text">
-                        <h3 class="title">Chicago</h3>
-                        <p>
-                            <b>Thank you, Chicago - A night we won't forget.</b>
-                        </p>
-                    </div>
+        <div id="slider">
+            <div class="myslide slide1">
+                <div class="text">
+                    <h3 class="title">Chicago</h3>
+                    <p>
+                        <b>Thank you, Chicago - A night we won't forget.</b>
+                    </p>
                 </div>
-                <!--<div class="myslide slide2">
-                    <img src="./assets/img/la.jpg" alt="" width="100%">
+            </div>
+            <div class="myslide slide2">
                     <div class="text">
                         <h3 class="title">Los Angeles</h3>
                         <p>
@@ -52,40 +67,37 @@
                     </div>
                 </div>
                 <div class="myslide slide3">
-                    <img src="./assets/img/ny.jpg" alt="" width="100%">
                     <div class="text">
                         <h3 class="title">New York</h3>
                         <p>
                             <b>The atmosphere in New York is lorem ipsum.</b>
                         </p>
                     </div>
-                </div>-->
+                </div>
                 <script>
                     let slideIndex = 0;
                     showSlides();
     
                     function showSlides() {
                     let i;
-                    let slides = document.getElementsByClassName("mySlides");
-                    let dots = document.getElementsByClassName("dot");
+                    let slides = document.getElementsByClassName("myslide");
                     for (i = 0; i < slides.length; i++) {
                         slides[i].style.display = "none";  
                     }
                     slideIndex++;
                     if (slideIndex > slides.length) {slideIndex = 1}    
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                    }
-                    slides[slideIndex-1].style.display = "block";  
-                    dots[slideIndex-1].className += " active";
-                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    slides[slideIndex-1].style.display = "block";
+                    setTimeout(showSlides, 3000); // Change image every 2 seconds
                     }
                 </script>
             </div>
         </div>
+        <div id="content">
+                
+        </div>
 
         <div id="footer">
-
+            <img src="/assets/img/slide/slider3.jpg" alt="">
         </div>
     </div>
     
