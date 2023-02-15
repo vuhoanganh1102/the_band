@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.3.0-web/css/all.css">
-    <title>Document</title>
+    <title>The_Band</title>
 </head>
 <body>
     <div id="main">
@@ -18,7 +18,10 @@
                 <li><a href="">Tour</a></li>
                 <li><a href="">Contact</a></li>
                 <li>
-                    <a href="">More
+                    <a href="">
+                        More
+                        <i class="ti-angle-down"></i>
+                        
                     </a>
                     <ul class="subnav">
                         <li><a href="">Merchandise</a></li>
@@ -26,19 +29,59 @@
                         <li><a href="">Media</a></li>
                     </ul>
                 </li>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
             </ul>
         </div>
-        
-        <div id="slider">
-            <div id="slide1">
-                <img src="" alt="">
-            </div>
-            <div id="slide2"></div>
-            <div id="slide3"></div>
-        </div>
-
         <div id="content">
-
+            <div id="slider">
+                <div class="myslide slide1">
+                    <div class="text">
+                        <h3 class="title">Chicago</h3>
+                        <p>
+                            <b>Thank you, Chicago - A night we won't forget.</b>
+                        </p>
+                    </div>
+                </div>
+                <!--<div class="myslide slide2">
+                    <img src="./assets/img/la.jpg" alt="" width="100%">
+                    <div class="text">
+                        <h3 class="title">Los Angeles</h3>
+                        <p>
+                            <b>We had the best time playing at Venice Beach!</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="myslide slide3">
+                    <img src="./assets/img/ny.jpg" alt="" width="100%">
+                    <div class="text">
+                        <h3 class="title">New York</h3>
+                        <p>
+                            <b>The atmosphere in New York is lorem ipsum.</b>
+                        </p>
+                    </div>
+                </div>-->
+                <script>
+                    let slideIndex = 0;
+                    showSlides();
+    
+                    function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}    
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                </script>
+            </div>
         </div>
 
         <div id="footer">
