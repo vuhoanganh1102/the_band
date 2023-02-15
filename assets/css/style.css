@@ -21,51 +21,52 @@ html{
 
 }
 #header{
-    height: 46.5px;
+    height: 46px;
     background-color: #000;;
 }
 #nav, .subnav{
     list-style-type: none;
 }
-#nav li{
-    display: inline-block;
+#nav>li{
+    display: block;
     float: left;
-    position: relative;
 }
+#nav li:hover .subnav{
+    display: block;
+}
+
 #nav > li > a{
     color:#fff;
     text-transform: uppercase;
 }
 #nav li a{
-    
     text-decoration: none;
-    line-height: 46.5px;
-    padding: 0 26px;
+    line-height: 46px;
+    padding:0 24px;
     display: block;
 }
-#nav >li:hover> a{
+#nav >li:hover> a,
+#nav .subnav li:hover a{
     color: #000;
     background-color: #ccc;
 }
 #nav .subnav{
+    display: none;
     position: absolute;
     background-color: #fff;
-    
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+    min-width: 160px;
 }
 #nav .subnav a{
     color: #000;
-    /*background-color: #fff;
-    box-sizing: border-box;*/
-    padding: 0 12px;
+    height: 38px;
+    padding:8px 16px;
+    line-height: 22px;
+    box-sizing: border-box;
 }
-#nav .subnav li:hover a{
-    color: #000;
-    background-color: #ccc;
-    width:116px;
-}
+
 #slider{
-    height: 500px;
-    background-color: #333;
+    
 }
 #content{
 
